@@ -22,7 +22,7 @@ options.add_argument("--disable-dev-shm-usage")
 driver = webdriver.Chrome(options=options)
 
 def test_heading():
-    heading = driver.find_element("h3")
+    heading = driver.find_elements_by_class_name("h3")
     print(heading.text)
     if heading.text != "Team 13":
         raise ValueError("Heading not correct!")
