@@ -8,7 +8,7 @@ from decouple import config
 
 PORT = config('PORT')
 
-driver = webdriver.Chrome(r"./chromedriver.exe")
+driver = webdriver.Chrome(r"./chromedriver")
 
 def collect():
     try:
