@@ -16,3 +16,7 @@ Step 3.
 
 `python3 app.py`
 
+
+## Run selenium on jenkins server, target the instance on test server
+
+follow https://www.youtube.com/watch?v=oG4_mxySO7Q
