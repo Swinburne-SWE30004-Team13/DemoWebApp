@@ -2,7 +2,6 @@
 
 ## Run the unit tests
 `python -m unittest`
-
 ## How to run the demo app
 
 Step 1.
