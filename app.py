@@ -8,9 +8,9 @@ app = Flask(__name__, template_folder="view")
 
 @app.route("/")
 def hello():
-    html =  "<h3>Team 13</h3>" \
-            "<b>Student Name:</b> Jack Hyland - 101603196<br/>" \
-            "<b>Student Name:</b> Chuong Ho - 101921623<br/>"
+    html =  "<h3 id='heading'>Team 13</h3>" \
+            "<b id='student1'>Student Name:</b> Jack Hyland - 101603196<br/>" \
+            "<b id='student2'>Student Name:</b> Chuong Ho - 101921623<br/>"
     
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
