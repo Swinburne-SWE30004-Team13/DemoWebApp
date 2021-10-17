@@ -37,9 +37,14 @@ chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
-# driver = webdriver.Chrome('/path/to/your_chrome_driver_dir/chromedriver',chrome_options=chrome_options)
 
 driver = webdriver.Chrome(options=chrome_options)
-driver.get("https://www.google.com/")
-element_text = driver.page_source
-print(element_text)
+
+def test_heading():
+    heading = driver.find_element_by_class_name("h3")
+    print(heading.text)
+    if heading.text != "Team 13":
+        raise ValueError("Heading not correct!")
+
+driver.get("http://54.66.27.76:7998/")
+test_heading()
