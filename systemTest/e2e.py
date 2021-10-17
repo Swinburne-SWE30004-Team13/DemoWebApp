@@ -10,9 +10,13 @@ driver = webdriver.Chrome(options=chrome_options)
 
 def test_heading():
     heading = driver.find_element(By.TAG_NAME,"h3")
-    print("Heading values: ", heading.text)
-    if heading.text != "Team 13":
+    print("Heading value: ", heading.text)
+    if heading.text == "Team 13":
+        print("Pass heading testing")
+    else:
+        print("Failed heading testing")
         raise ValueError("Heading not correct!")
+
 
 driver.get("http://13.55.209.93:7998/")
 
