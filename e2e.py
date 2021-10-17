@@ -33,14 +33,13 @@
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-options = Options()
-options.add_argument("--no-sandbox")
-options.add_argument("--headless")
-options.add_argument("--disable-gpu")
-options.add_argument("enable-automation")
-options.add_argument("--disable-infobars")
-options.add_argument("--disable-dev-shm-usage")
-driver = webdriver.Chrome(options=options)
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+# driver = webdriver.Chrome('/path/to/your_chrome_driver_dir/chromedriver',chrome_options=chrome_options)
+
+driver = webdriver.Chrome('./chromedriver', chrome_options=chrome_options)
 driver.get("https://www.google.com/")
 element_text = driver.page_source
 print(element_text)
