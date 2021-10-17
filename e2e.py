@@ -51,7 +51,3 @@ driver.get("http://13.55.209.93:7998/")
 
 print(driver.page_source)
 test_heading()
-
-
-while True:
-    print("Hey")
