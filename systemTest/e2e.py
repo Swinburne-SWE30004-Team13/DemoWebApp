@@ -3,7 +3,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from decouple import config
 
-
 # print out the port 
 TEST_SERVER_IP = config('TEST_SERVER_IP')
 chrome_options = Options()
