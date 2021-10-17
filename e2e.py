@@ -46,5 +46,5 @@ def test_heading():
     if heading.text != "Team 13":
         raise ValueError("Heading not correct!")
 
-driver.get("http://54.66.27.76:7998/")
+driver.get("http://13.55.209.93:7998/")
 test_heading()
