@@ -11,7 +11,7 @@ driver = webdriver.Chrome(options=chrome_options)
 def test_heading():
     heading = driver.find_element(By.TAG_NAME,"h3")
     print("Heading value: ", heading.text)
-    if heading.text == "Team 13":
+    if heading.text == "Team 3":
         print("Pass heading testing")
     else:
         print("Failed heading testing")
