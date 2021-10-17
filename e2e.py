@@ -39,7 +39,7 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 # driver = webdriver.Chrome('/path/to/your_chrome_driver_dir/chromedriver',chrome_options=chrome_options)
 
-driver = webdriver.Chrome('./chromedriver', chrome_options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://www.google.com/")
 element_text = driver.page_source
 print(element_text)
