@@ -1,7 +1,6 @@
 import unittest
 from core.Operator import * 
 
-
 class TestOperator(unittest.TestCase):
 
     def test_sum(self):
