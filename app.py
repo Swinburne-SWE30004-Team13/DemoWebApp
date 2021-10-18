@@ -10,7 +10,8 @@ app = Flask(__name__, template_folder="view")
 def hello():
     html =  "<h3 id='heading'>Team 13</h3>" \
             "<b id='student1'>Student Name:</b> Jack Hyland - 101603196<br/>" \
-            "<b id='student2'>Student Name:</b> Chuong Ho - 101921623<br/>"
+            "<b id='student2'>Student Name:</b> Chuong Ho - 101921623<br/>" \
+            "<p>Tutorial time: 12:30PM - 14:30PM </p>"
     
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
