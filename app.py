@@ -14,6 +14,7 @@ def hello():
             "<p>Tutorial time: 12:30PM - 2:30PM </p>" \
             "<p>Project demonstration: trial</p>"
             
+            
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
 
