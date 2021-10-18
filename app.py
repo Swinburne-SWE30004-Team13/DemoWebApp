@@ -13,8 +13,6 @@ def hello():
             "<b id='student2'>Student Name:</b> Chuong Ho - 101921623<br/>" \
             "<p>Project Demo </p>" \
             "<p>Tutorial time: 12:30PM - 14:30PM </p>"
-    
-
 
     
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
