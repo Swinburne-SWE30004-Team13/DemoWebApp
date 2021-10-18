@@ -14,6 +14,8 @@ def hello():
             "<p>Tutorial time: 12:30PM - 2:30PM </p>" 
             
 
+
+            
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
 @app.route("/calc")
