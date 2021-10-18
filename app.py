@@ -6,6 +6,7 @@ from flask.templating import render_template
 
 app = Flask(__name__, template_folder="view")
 
+
 @app.route("/")
 def hello():
     html =  "<h3 id='heading'>Team 13</h3>" \
