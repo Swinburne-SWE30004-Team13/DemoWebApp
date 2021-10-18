@@ -1,5 +1,4 @@
 #!/bin/bash
 
 echo "Starting Server...."
-ls
-python3 /var/www/html/pythonwebapp/app.py
+nohup python3 /var/www/html/pythonwebapp/app.py > /dev/null 2>&1&
