@@ -1,5 +1,11 @@
 # DemoWebApp
+<<<<<<< HEAD
+
+## Run the unit tests  
+
+=======
 ## Run the unit tests
+>>>>>>> 4e6711b875c64ecebc46687a54636d7c51aa6067
 `python -m unittest`
 ## How to run the demo app
 
